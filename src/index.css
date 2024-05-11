@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./assets/fonts/SF-Pro-Display-Medium.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./assets/fonts/SFProText-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./assets/fonts/SFProText-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  color: #050b2b;
+  font-family: "SF Pro Text";
+  cursor: default;
+}
+
+body {
+  background-color: #f8f8f8;
+  /* padding: 0 12px; */
+}
+
+a {
+  cursor: pointer;
+}
+
+input {
+  cursor: auto;
+}
+
+.user_container {
+  width: clamp(280px, 92vw, 1400px);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 860px) {
+  .user_container {
+    width: 100%;
+  }
+}
+
+.showcase {
+  background-blend-mode: soft-light;
+  background: url("./assets/images/showcase-ico.svg"),
+    linear-gradient(135deg, #379ff2 1.53%, #022fe4 90.79%);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+/* @media (max-width: 1024px) {
+  .showcase {
+    background-position: right bottom;
+  }
+} */
+
+.card__header {
+  background: linear-gradient(135deg, #379ff2 1.53%, #022fe4 90.79%);
+}
+
+.pagination-links div:active {
+  border: 1px solid #0129e3;
+  span {
+    color: #0129e3;
+  }
+}
